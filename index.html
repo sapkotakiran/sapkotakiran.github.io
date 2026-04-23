@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Kiran Sapkota — ML Engineer</title>
+<meta name="description" content="Machine Learning Engineer specialising in NLP systems. Builder of end-to-end ML pipelines. Open to global remote opportunities."/>
+<meta property="og:title" content="Kiran Sapkota — ML Engineer"/>
+<meta property="og:description" content="I build ML systems that turn raw text into intelligent decisions."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://kiransapkota.vercel.app"/>
+<meta property="og:image" content="https://kiransapkota.vercel.app/preview.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Kiran Sapkota — ML Engineer"/>
+<meta name="twitter:description" content="I build ML systems that turn raw text into intelligent decisions."/>
+<meta name="twitter:image" content="https://kiransapkota.vercel.app/preview.png"/>
+<meta name="theme-color" content="#0A1628"/>
+<link rel="canonical" href="https://kiransapkota.vercel.app"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kiran Sapkota",
+  "jobTitle": "Machine Learning Engineer",
+  "description": "ML Engineer specialising in NLP systems. Builder of end-to-end ML pipelines.",
+  "url": "https://kiransapkota.vercel.app",
+  "sameAs": [
+    "https://github.com/sapkotakiran",
+    "https://www.linkedin.com/in/sapkota-kiran"
+  ],
+  "email": "sapkotakiran66@gmail.com",
+  "knowsAbout": ["Machine Learning", "NLP", "PyTorch", "Python", "Data Science", "Deep Learning", "Scikit-learn"],
+  "workLocation": {
+    "@type": "Place",
+    "name": "Remote"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Kiran Sapkota — ML Engineer Portfolio",
+  "description": "Portfolio of ML projects focusing on NLP systems and end-to-end classification pipelines",
+  "url": "https://kiransapkota.vercel.app",
+  "mainEntity": [
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Fake News Detection System",
+      "description": "End-to-end NLP pipeline classifying political news with 98% accuracy using TF-IDF and deep learning",
+      "url": "https://github.com/sapkotakiran/fake-news-detection",
+      "programmingLanguage": ["Python", "PyTorch"],
+      "codeRepository": "https://github.com/sapkotakiran/fake-news-detection"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Resume Classification System",
+      "description": "PyTorch BiLSTM with attention mechanism predicting job roles from resume text with 86% accuracy",
+      "url": "https://github.com/sapkotakiran/Resume-Classification",
+      "programmingLanguage": ["Python", "PyTorch"],
+      "codeRepository": "https://github.com/sapkotakiran/Resume-Classification"
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#0A1628;color:#E8EFF8;font-family:'DM Sans',sans-serif;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit;color:inherit}
+
+/* ── TOKENS ── */
+:root{
+  --bg:#0A1628;--bg2:#0D1F3C;--bg3:#112240;--bg4:#163256;--bg5:#1E3A5F;
+  --card:#0F1E36;--card-h:#132540;
+  --acc:#0EA5E9;--acc-g:#38BDF8;--acc-d:rgba(14,165,233,0.12);--acc-b:rgba(14,165,233,0.28);
+  --teal:#0D9488;--teal-d:rgba(13,148,136,0.12);--teal-b:rgba(13,148,136,0.28);
+  --t1:#F1F5F9;--t2:#CBD5E1;--t3:#94A3B8;--t4:#64748B;
+  --border:rgba(255,255,255,0.07);
+  --fd:'Syne',sans-serif;--fb:'DM Sans',sans-serif;--fm:'JetBrains Mono',monospace;
+  --r8:8px;--r12:12px;--r20:20px;
+  --ease:.25s cubic-bezier(.4,0,.2,1);
+  --ease-slow:.5s cubic-bezier(.4,0,.2,1);
+  --sh-glow:0 0 40px rgba(14,165,233,0.18);
+  --sh-btn:0 8px 32px rgba(14,165,233,0.4);
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:2px}
+
+/* ── BG ── */
+.bg-grid{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(14,165,233,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(14,165,233,.025) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 90% 70% at 50% 0%,black 30%,transparent 100%)}
+.orb{position:fixed;pointer-events:none;border-radius:50%;z-index:0;filter:blur(120px);opacity:.07}
+.orb1{width:600px;height:600px;background:var(--acc);top:-200px;right:-100px}
+.orb2{width:500px;height:500px;background:var(--teal);bottom:10%;left:-150px}
+
+/* ── LAYOUT ── */
+section{position:relative;z-index:1}
+.wrap{max-width:1100px;margin:0 auto;padding:0 clamp(20px,5vw,80px)}
+
+/* ── NAV ── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:200;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,5vw,80px);background:rgba(10,22,40,.65);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid transparent;transition:border-color var(--ease)}
+#nav.sc{border-bottom-color:var(--border)}
+.nlogo{font-family:var(--fd);font-weight:800;font-size:1.1rem;color:var(--t1);letter-spacing:-.02em}
+.nlogo span{color:var(--acc)}
+.nlinks{display:flex;align-items:center;gap:28px}
+.nlinks a{font-size:.875rem;font-weight:500;color:var(--t3);transition:color var(--ease)}
+.nlinks a:hover,.nlinks a:focus-visible{color:var(--t1);outline:none}
+.ncv{background:var(--acc);color:#fff;padding:8px 18px;border-radius:var(--r8);font-size:.85rem;font-weight:600;transition:all var(--ease)}
+.ncv:hover,.ncv:focus-visible{background:var(--acc-g);transform:translateY(-1px);box-shadow:0 4px 18px rgba(14,165,233,.4);outline:none}
+/* hamburger */
+.hbg{display:none;flex-direction:column;gap:5px;padding:6px;border-radius:var(--r8);transition:background var(--ease)}
+.hbg:hover,.hbg:focus-visible{background:var(--bg4);outline:none}
+.hbg span{width:22px;height:2px;background:var(--t2);border-radius:2px;transition:var(--ease);display:block}
+.hbg[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hbg[aria-expanded="true"] span:nth-child(2){opacity:0;transform:scaleX(0)}
+.hbg[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+#drawer{display:none;position:fixed;top:68px;left:0;right:0;z-index:199;background:rgba(10,22,40,.97);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--border);padding:20px clamp(20px,5vw,80px) 28px;flex-direction:column;gap:16px}
+#drawer.open{display:flex}
+#drawer a{font-size:.95rem;font-weight:500;color:var(--t2);padding:8px 0;border-bottom:1px solid var(--border);transition:color var(--ease)}
+#drawer a:hover{color:var(--acc)}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;align-items:center;padding-top:68px}
+.hwrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 0 100px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--acc-d);border:1px solid var(--acc-b);border-radius:100px;padding:6px 14px;font-size:.75rem;font-weight:700;color:var(--acc);letter-spacing:.07em;text-transform:uppercase;margin-bottom:24px;animation:fu .7s ease both}
+.eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--acc);animation:bl 2s infinite}
+@keyframes bl{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+.h1{font-family:var(--fd);font-weight:800;font-size:clamp(2.2rem,4.5vw,3.4rem);line-height:1.1;color:var(--t1);letter-spacing:-.03em;margin-bottom:22px;animation:fu .7s .1s ease both}
+.typed-wrap{color:var(--acc)}
+.cursor{display:inline-block;width:3px;height:.85em;background:var(--acc);border-radius:2px;margin-left:2px;vertical-align:middle;animation:cb 1s steps(1) infinite}
+@keyframes cb{0%,100%{opacity:1}50%{opacity:0}}
+.hsub{font-size:1rem;color:var(--t3);line-height:1.75;max-width:460px;margin-bottom:38px;font-weight:300;animation:fu .7s .2s ease both}
+.hctas{display:flex;gap:12px;flex-wrap:wrap;animation:fu .7s .3s ease both}
+.btn1{display:inline-flex;align-items:center;gap:8px;background:var(--acc);color:#fff;padding:12px 26px;border-radius:var(--r8);font-weight:600;font-size:.9rem;transition:all var(--ease)}
+.btn1:hover,.btn1:focus-visible{background:var(--acc-g);transform:translateY(-2px);box-shadow:var(--sh-btn);outline:none}
+.btn1 svg{transition:transform var(--ease)}
+.btn1:hover svg{transform:translateX(3px)}
+.btn2{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--acc-b);color:var(--acc);padding:12px 26px;border-radius:var(--r8);font-weight:600;font-size:.9rem;transition:all var(--ease)}
+.btn2:hover,.btn2:focus-visible{background:var(--acc-d);transform:translateY(-2px);outline:none}
+.badges{display:flex;flex-direction:column;gap:12px;animation:fu .7s .4s ease both}
+.badge{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:15px 18px;transition:all var(--ease);position:relative;overflow:hidden}
+.badge::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,var(--acc-d),transparent);opacity:0;transition:opacity var(--ease)}
+.badge:hover{border-color:var(--acc-b);transform:translateX(5px);box-shadow:var(--sh-glow)}
+.badge:hover::after{opacity:1}
+.bicon{width:40px;height:40px;flex-shrink:0;border-radius:10px;background:var(--acc-d);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.bval{font-family:var(--fd);font-weight:700;font-size:1rem;color:var(--t1);line-height:1.2}
+.blbl{font-size:.73rem;color:var(--t3);margin-top:2px}
+
+/* ── SECTION HEADER ── */
+.shdr{text-align:center;margin-bottom:60px}
+.stag{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:700;color:var(--acc);letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+.stag::before,.stag::after{content:'';width:20px;height:1px;background:var(--acc);opacity:.5}
+.sh2{font-family:var(--fd);font-weight:800;font-size:clamp(1.7rem,3.5vw,2.4rem);color:var(--t1);letter-spacing:-.02em;margin-bottom:14px}
+.ssub{font-size:.97rem;color:var(--t3);max-width:500px;margin:0 auto;font-weight:300}
+
+/* ── ABOUT ── */
+#about{padding:120px 0}
+.agrid{display:grid;grid-template-columns:1fr 1.45fr;gap:72px;align-items:start}
+.acard{background:var(--card);border:1px solid var(--border);border-radius:var(--r20);padding:30px;overflow:hidden;position:relative}
+.acard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--acc),var(--teal))}
+.aname{font-family:var(--fd);font-weight:800;font-size:1.35rem;color:var(--t1);margin-bottom:3px}
+.arole{font-size:.82rem;color:var(--acc);font-weight:500;margin-bottom:22px}
+.astats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:22px}
+.astat{background:var(--bg3);border-radius:var(--r8);padding:13px 15px;text-align:center}
+.asn{font-family:var(--fd);font-weight:800;font-size:1.55rem;color:var(--acc);line-height:1}
+.asl{font-size:.68rem;color:var(--t3);margin-top:4px;text-transform:uppercase;letter-spacing:.05em}
+.atags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{background:var(--acc-d);border:1px solid var(--acc-b);color:var(--acc);font-size:.7rem;font-weight:600;padding:3px 9px;border-radius:100px;letter-spacing:.04em}
+.aopen{display:inline-flex;align-items:center;gap:7px;background:var(--teal-d);border:1px solid var(--teal-b);color:#2DD4BF;border-radius:100px;padding:7px 14px;font-size:.77rem;font-weight:600;margin-top:18px}
+.aopen::before{content:'';width:6px;height:6px;border-radius:50%;background:#2DD4BF;animation:bl 2s infinite}
+.atxt h3{font-family:var(--fd);font-weight:700;font-size:1.45rem;color:var(--t1);margin-bottom:18px;letter-spacing:-.02em}
+.atxt p{color:var(--t2);margin-bottom:15px;font-size:.95rem;line-height:1.8;font-weight:300}
+.atxt p strong{color:var(--t1);font-weight:500}
+.atxt p em{color:var(--acc);font-style:normal}
+
+/* ── SKILLS ── */
+#skills{padding:120px 0;background:linear-gradient(180deg,transparent,rgba(14,165,233,.025),transparent)}
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.scard{background:var(--card);border:1px solid var(--border);border-radius:var(--r20);padding:26px;transition:border-color var(--ease),transform var(--ease),box-shadow var(--ease)}
+.scard:hover{border-color:var(--acc-b);transform:translateY(-4px);box-shadow:var(--sh-glow)}
+.sicon{width:42px;height:42px;border-radius:var(--r8);background:var(--acc-d);display:flex;align-items:center;justify-content:center;font-size:1.15rem;margin-bottom:16px}
+.scard h4{font-family:var(--fd);font-weight:700;font-size:.9rem;color:var(--t1);margin-bottom:13px}
+.pills{display:flex;flex-wrap:wrap;gap:5px}
+.pill{background:var(--bg3);border:1px solid var(--border);color:var(--t3);font-family:var(--fm);font-size:.68rem;padding:3px 9px;border-radius:5px;transition:all var(--ease)}
+.pill:hover{border-color:var(--acc-b);color:var(--acc);background:var(--acc-d)}
+
+/* ── PROJECTS ── */
+#projects{padding:120px 0}
+.plist{display:flex;flex-direction:column;gap:20px}
+.pcard{background:var(--card);border:1px solid var(--border);border-radius:var(--r20);overflow:hidden;transition:border-color var(--ease)}
+.pcard:hover,.pcard:focus-within{border-color:var(--acc-b)}
+.ptrigger{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:30px 34px;width:100%;text-align:left;background:transparent;border-radius:0;transition:background var(--ease)}
+.ptrigger:hover{background:var(--card-h)}
+.ptrigger:focus-visible{outline:2px solid var(--acc);outline-offset:-2px;background:var(--card-h)}
+.pmeta{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+.pnum{font-family:var(--fm);font-size:.7rem;color:var(--acc)}
+.ptlbl{font-size:.65rem;font-weight:700;padding:2px 7px;border-radius:3px;background:var(--teal-d);color:#2DD4BF;letter-spacing:.05em;text-transform:uppercase}
+.ptitle{font-family:var(--fd);font-weight:700;font-size:1.2rem;color:var(--t1);letter-spacing:-.02em;margin-bottom:8px}
+.psum{font-size:.86rem;color:var(--t3);max-width:580px;line-height:1.65;font-weight:300}
+.pmets{display:flex;gap:18px;margin-top:12px;flex-wrap:wrap}
+.met{display:flex;align-items:baseline;gap:5px;font-size:.77rem}
+.mv{font-family:var(--fd);font-weight:700;color:var(--acc);font-size:.88rem}
+.ml{color:var(--t4)}
+.chev{color:var(--t4);flex-shrink:0;transition:transform var(--ease),color var(--ease)}
+.pcard[data-open="true"] .chev{transform:rotate(180deg);color:var(--acc)}
+/* case study */
+.cs{overflow:hidden;height:0;transition:height var(--ease-slow);border-top:1px solid transparent}
+.pcard[data-open="true"] .cs{border-top-color:var(--border)}
+.csgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:28px 34px}
+.csb{background:var(--bg3);border-radius:var(--r8);padding:18px 20px}
+.csb.full{grid-column:1/-1}
+.cslbl{font-size:.65rem;font-weight:700;color:var(--acc);letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:6px;margin-bottom:8px}
+.cslbl::before{content:'';width:10px;height:2px;background:var(--acc);flex-shrink:0}
+.cstxt{font-size:.83rem;color:var(--t2);line-height:1.7;font-weight:300}
+.cstxt strong{color:var(--acc);font-weight:600}
+.cschips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.cschip{background:var(--bg);border:1px solid var(--border);color:var(--t3);font-family:var(--fm);font-size:.67rem;padding:2px 7px;border-radius:4px}
+.plrow{display:flex;gap:10px;padding:0 34px 26px}
+.plink{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:600;color:var(--acc);border:1px solid var(--acc-b);border-radius:var(--r8);padding:6px 13px;transition:all var(--ease)}
+.plink:hover,.plink:focus-visible{background:var(--acc-d);transform:translateY(-1px);outline:none}
+.plink svg{width:13px;height:13px;flex-shrink:0}
+
+/* ── PROCESS ── */
+#process{padding:120px 0}
+.pwrap{display:grid;grid-template-columns:repeat(5,1fr);position:relative}
+.pwrap::before{content:'';position:absolute;top:27px;left:calc(10% + 22px);right:calc(10% + 22px);height:1px;background:linear-gradient(90deg,var(--acc),var(--teal));opacity:.25}
+.pstep{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 10px}
+.pnum{width:54px;height:54px;border-radius:50%;background:var(--card);border:2px solid var(--acc-b);display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-weight:800;font-size:.95rem;color:var(--acc);margin-bottom:18px;position:relative;z-index:1;transition:all var(--ease)}
+.pstep:hover .pnum{background:var(--acc);color:#fff;border-color:var(--acc);box-shadow:0 0 22px rgba(14,165,233,.5)}
+.ptit{font-family:var(--fd);font-weight:700;font-size:.82rem;color:var(--t1);margin-bottom:7px}
+.pdesc{font-size:.73rem;color:var(--t4);line-height:1.6}
+
+/* ── EXPERIENCE ── */
+#experience{padding:120px 0;background:linear-gradient(180deg,transparent,rgba(14,165,233,.02),transparent)}
+.egrid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.ecol h3{font-family:var(--fd);font-weight:700;font-size:.82rem;color:var(--t3);letter-spacing:.09em;text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:10px}
+.ecol h3::after{content:'';flex:1;height:1px;background:var(--border)}
+.tli{background:var(--card);border:1px solid var(--border);border-radius:var(--r12);padding:20px 22px;margin-bottom:14px;border-left:3px solid transparent;transition:all var(--ease)}
+.tli:hover{border-left-color:var(--acc);transform:translateX(4px)}
+.tdate{font-family:var(--fm);font-size:.67rem;color:var(--acc);margin-bottom:5px}
+.ttit{font-family:var(--fd);font-weight:700;font-size:.9rem;color:var(--t1);margin-bottom:3px}
+.torg{font-size:.8rem;color:var(--t3);margin-bottom:8px}
+.tdesc{font-size:.8rem;color:var(--t4);line-height:1.65;font-weight:300}
+.tbadge{display:inline-flex;align-items:center;gap:5px;background:var(--teal-d);border:1px solid var(--teal-b);color:#2DD4BF;font-size:.65rem;font-weight:600;padding:3px 8px;border-radius:4px;margin-top:10px}
+
+/* ── CONTACT ── */
+#contact{padding:120px 0 160px}
+.ccard{background:var(--card);border:1px solid var(--border);border-radius:var(--r20);padding:60px;text-align:center;max-width:680px;margin:0 auto;position:relative;overflow:hidden}
+.ccard::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(14,165,233,.1),transparent 70%);pointer-events:none}
+.ccard h2{font-family:var(--fd);font-weight:800;font-size:1.9rem;color:var(--t1);margin-bottom:14px;letter-spacing:-.02em}
+.ccard p{color:var(--t3);margin-bottom:36px;font-size:.95rem;font-weight:300;max-width:400px;margin-left:auto;margin-right:auto}
+.cemail{display:inline-flex;align-items:center;gap:9px;background:var(--acc);color:#fff;padding:13px 30px;border-radius:var(--r8);font-weight:600;font-size:.92rem;transition:all var(--ease);margin-bottom:36px}
+.cemail:hover,.cemail:focus-visible{background:var(--acc-g);transform:translateY(-2px);box-shadow:var(--sh-btn);outline:none}
+.srow{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.slink{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--border);color:var(--t3);padding:9px 18px;border-radius:var(--r8);font-size:.8rem;font-weight:500;transition:all var(--ease)}
+.slink:hover,.slink:focus-visible{border-color:var(--acc-b);color:var(--acc);background:var(--acc-d);outline:none}
+
+/* ── FOOTER ── */
+footer{border-top:1px solid var(--border);padding:26px 0;text-align:center;color:var(--t4);font-size:.75rem}
+
+/* ── ANIMATIONS ── */
+@keyframes fu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.rev{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+.rev.in{opacity:1;transform:none}
+.rev[data-d="1"]{transition-delay:.1s}
+.rev[data-d="2"]{transition-delay:.2s}
+.rev[data-d="3"]{transition-delay:.3s}
+.rev[data-d="4"]{transition-delay:.4s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .hwrap{grid-template-columns:1fr;gap:40px}
+  .agrid{grid-template-columns:1fr}
+  .sgrid{grid-template-columns:repeat(2,1fr)}
+  .egrid{grid-template-columns:1fr}
+  .pwrap{grid-template-columns:1fr;gap:22px}
+  .pwrap::before{display:none}
+  .csgrid{grid-template-columns:1fr}
+  .ccard{padding:40px 24px}
+  .hbg{display:flex}
+  .nlinks,.ncv{display:none}
+}
+@media(max-width:520px){
+  .sgrid{grid-template-columns:1fr}
+  .hctas{flex-direction:column}
+  .btn1,.btn2{justify-content:center}
+  .astats{grid-template-columns:1fr 1fr}
+  .ptrigger{padding:22px 20px}
+  .csgrid{padding:22px 20px}
+  .plrow{padding:0 20px 20px}
+}
+</style>
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="orb orb1" aria-hidden="true"></div>
+<div class="orb orb2" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav id="nav" aria-label="Main navigation">
+  <div class="nlogo" aria-label="Kiran Sapkota">KS<span>.</span></div>
+  <div class="nlinks">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Work</a>
+    <a href="#process">Process</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="https://github.com/sapkotakiran" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
+  <a href="Kiran_Sapkota_CV%20.pdf" download class="ncv">Download CV</a>
+  <button class="hbg" id="hbg" aria-label="Toggle menu" aria-expanded="false" aria-controls="drawer">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div id="drawer" role="menu" aria-label="Mobile navigation">
+  <a href="#about" role="menuitem">About</a>
+  <a href="#skills" role="menuitem">Skills</a>
+  <a href="#projects" role="menuitem">Work</a>
+  <a href="#process" role="menuitem">Process</a>
+  <a href="#experience" role="menuitem">Experience</a>
+  <a href="#contact" role="menuitem">Contact</a>
+  <a href="https://github.com/sapkotakiran" target="_blank" rel="noopener" role="menuitem">GitHub ↗</a>
+  <a href="Kiran_Sapkota_CV%20.pdf" download role="menuitem">Download CV</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" aria-label="Introduction">
+  <div class="wrap">
+    <div class="hwrap">
+      <div>
+        <div class="eyebrow">Available for opportunities</div>
+        <h1 class="h1">
+          I build ML systems that turn<br>
+          <span class="typed-wrap" id="typed-target" aria-live="polite" aria-atomic="true" aria-label="raw text into intelligent decisions">
+            <span id="typed-text"></span><span class="cursor" aria-hidden="true"></span>
+          </span>
+        </h1>
+        <p class="hsub">Machine Learning Engineer specialising in end-to-end NLP pipelines. BSc Computer Systems Engineering. Open to global remote opportunities.</p>
+        <div class="hctas">
+          <a href="#projects" class="btn1">
+            Explore Case Studies
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M3 7.5h9M8 4l4 3.5L8 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="Kiran_Sapkota_CV%20.pdf" download class="btn2">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 2v7M4 6.5l3 3 3-3M2 11h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+      <div class="badges" role="list" aria-label="Key achievements">
+        <div class="badge" role="listitem">
+          <div class="bicon" aria-hidden="true">🎯</div>
+          <div><div class="bval">~98% Accuracy</div><div class="blbl">Fake News Detection — LR + Random Forest</div></div>
+        </div>
+        <div class="badge" role="listitem">
+          <div class="bicon" aria-hidden="true">🔬</div>
+          <div><div class="bval">2 NLP Systems Shipped</div><div class="blbl">End-to-end pipelines — classification &amp; resume intelligence</div></div>
+        </div>
+        <div class="badge" role="listitem">
+          <div class="bicon" aria-hidden="true">🌍</div>
+          <div><div class="bval">Global AI Collaboration</div><div class="blbl">Omdena — international ML team, agile sprint, real deliverables</div></div>
+        </div>
+        <div class="badge" role="listitem">
+          <div class="bicon" aria-hidden="true">🎓</div>
+          <div><div class="bval">BSc Computer Systems Eng.</div><div class="blbl">University of Sunderland, UK — 2025</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="shdr rev">
+      <div class="stag">Who I Am</div>
+      <h2 class="sh2" id="about-h">Engineer. Builder. Thinker.</h2>
+      <p class="ssub">Not just someone who studies ML — someone who ships it.</p>
+    </div>
+    <div class="agrid">
+      <div class="rev">
+        <div class="acard">
+          <div class="aname">Kiran Sapkota</div>
+          <div class="arole">Machine Learning Engineer · NLP Specialist</div>
+          <div class="astats">
+            <div class="astat"><div class="asn">98%</div><div class="asl">Best Accuracy</div></div>
+            <div class="astat"><div class="asn">2</div><div class="asl">Systems Built</div></div>
+            <div class="astat"><div class="asn">8wk</div><div class="asl">Omdena Sprint</div></div>
+            <div class="astat"><div class="asn">3+</div><div class="asl">Years Study</div></div>
+          </div>
+          <div class="atags">
+            <span class="tag">PyTorch</span><span class="tag">NLP</span><span class="tag">BiLSTM</span>
+            <span class="tag">BERT</span><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">TF-IDF</span>
+          </div>
+          <div class="aopen">Open to international remote roles</div>
+        </div>
+      </div>
+      <div class="atxt rev" data-d="1">
+        <h3>My Story</h3>
+        <p>I'm a Machine Learning Engineer from Nepal, trained at the <strong>University of Sunderland (UK)</strong> in Computer Systems Engineering. While most people at my level are still completing courses, <em>I've been shipping real ML systems</em> — building, measuring, and iterating until the numbers prove the work.</p>
+        <p>My engineering background means I think beyond models. I think about <strong>pipelines, data quality, evaluation frameworks, and real-world constraints</strong> — the gap between a Jupyter notebook and a deployable system.</p>
+        <p>Through <strong>Omdena's Global AI Challenge</strong>, I worked alongside international engineers in agile sprints — learning what it means to collaborate under real deadlines, with real expectations, across time zones.</p>
+        <p>My niche is <em>NLP-powered classification systems</em>: text data comes in, intelligent decisions come out. I'm actively seeking entry-level or internship ML Engineer roles where I can contribute immediately.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" aria-labelledby="skills-h">
+  <div class="wrap">
+    <div class="shdr rev">
+      <div class="stag">Technical Stack</div>
+      <h2 class="sh2" id="skills-h">What I Work With</h2>
+      <p class="ssub">A focused toolkit — tools I've actually used to build and evaluate real systems.</p>
+    </div>
+    <div class="sgrid">
+      <div class="scard rev"><div class="sicon" aria-hidden="true">🤖</div><h4>Machine Learning</h4><div class="pills"><span class="pill">Supervised Learning</span><span class="pill">Unsupervised</span><span class="pill">Model Evaluation</span><span class="pill">Cross-Validation</span><span class="pill">Hyperparameter Tuning</span><span class="pill">Ensemble Methods</span></div></div>
+      <div class="scard rev" data-d="1"><div class="sicon" aria-hidden="true">💬</div><h4>NLP &amp; Deep Learning</h4><div class="pills"><span class="pill">BiLSTM</span><span class="pill">BERT</span><span class="pill">Transformers</span><span class="pill">TF-IDF</span><span class="pill">NLTK</span><span class="pill">Attention</span><span class="pill">Text Classification</span></div></div>
+      <div class="scard rev" data-d="2"><div class="sicon" aria-hidden="true">🔧</div><h4>Frameworks &amp; Libraries</h4><div class="pills"><span class="pill">PyTorch</span><span class="pill">TensorFlow</span><span class="pill">Scikit-learn</span><span class="pill">Pandas</span><span class="pill">NumPy</span><span class="pill">Matplotlib</span><span class="pill">Seaborn</span></div></div>
+      <div class="scard rev"><div class="sicon" aria-hidden="true">📊</div><h4>Data Science</h4><div class="pills"><span class="pill">EDA</span><span class="pill">Feature Engineering</span><span class="pill">Statistical Analysis</span><span class="pill">Preprocessing</span><span class="pill">Visualisation</span></div></div>
+      <div class="scard rev" data-d="1"><div class="sicon" aria-hidden="true">💻</div><h4>Programming &amp; Dev</h4><div class="pills"><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">Bash</span><span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">Linux</span><span class="pill">Jupyter</span></div></div>
+      <div class="scard rev" data-d="2"><div class="sicon" aria-hidden="true">🤝</div><h4>Working Style</h4><div class="pills"><span class="pill">Agile / Scrum</span><span class="pill">Remote Collab</span><span class="pill">Documentation</span><span class="pill">Code Review</span><span class="pill">Problem-Solving</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" aria-labelledby="projects-h">
+  <div class="wrap">
+    <div class="shdr rev">
+      <div class="stag">Selected Work</div>
+      <h2 class="sh2" id="projects-h">Case Studies</h2>
+      <p class="ssub">Click any project to expand the full case study — problem, approach, trade-offs, result.</p>
+    </div>
+    <div class="plist">
+      <!-- PROJECT 1 -->
+      <article class="pcard" data-open="false" id="pc1">
+        <button class="ptrigger" id="t1" aria-expanded="false" aria-controls="cs1">
+          <div>
+            <div class="pmeta"><span class="pnum">01</span><span class="ptlbl">NLP · Classification</span></div>
+            <div class="ptitle">Fake News Detection System</div>
+            <p class="psum">End-to-end NLP pipeline classifying political news as real or fake — GossipCop &amp; PolitiFact datasets, NLTK preprocessing, TF-IDF features, and deep learning comparisons.</p>
+            <div class="pmets">
+              <div class="met"><span class="mv">~98%</span><span class="ml">Test Accuracy</span></div>
+              <div class="met"><span class="mv">2</span><span class="ml">Models Tuned</span></div>
+              <div class="met"><span class="mv">BiLSTM + BERT</span><span class="ml">Explored</span></div>
+            </div>
+          </div>
+          <svg class="chev" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="cs" id="cs1" role="region" aria-labelledby="t1">
+          <div class="csgrid">
+            <div class="csb"><div class="cslbl">The Problem</div><p class="cstxt">Misinformation spreads faster than corrections. Manual fact-checking cannot scale to platform volume. A classifier reduces moderation load — with real consequences for public discourse.</p></div>
+            <div class="csb"><div class="cslbl">My Approach</div><p class="cstxt">Built a full NLP preprocessing pipeline (tokenisation → stopword removal → stemming → TF-IDF), then benchmarked classical ML before exploring deep learning. Evaluated on F1-score, not just accuracy.</p></div>
+            <div class="csb"><div class="cslbl">Trade-offs &amp; Challenges</div><p class="cstxt">BiLSTM and BERT offered marginal accuracy gains at significant compute cost. For most deployments the LR + TF-IDF pipeline delivers near-identical performance at a fraction of inference time — a deliberate engineering decision.</p></div>
+            <div class="csb"><div class="cslbl">Impact</div><p class="cstxt"><strong>~98% accuracy</strong> at scale = 1-2 false positives per 100 articles. For platform moderation teams processing 10K+ articles daily, this translates to <strong>100+ correct editorial decisions daily</strong>. Reduces manual fact-checking overhead while maintaining trust. LR pipeline is production-ready; deep learning path documented for future iterations.</p></div>
+            <div class="csb full"><div class="cslbl">Tech Stack</div><div class="cschips"><span class="cschip">Python</span><span class="cschip">PyTorch</span><span class="cschip">Scikit-learn</span><span class="cschip">NLTK</span><span class="cschip">TF-IDF</span><span class="cschip">Logistic Regression</span><span class="cschip">Random Forest</span><span class="cschip">BiLSTM</span><span class="cschip">BERT</span><span class="cschip">Matplotlib</span><span class="cschip">Seaborn</span></div></div>
+          </div>
+        </div>
+        <div class="plrow" id="pl1" hidden>
+          <a href="https://github.com/sapkotakiran/fake-news-detection" target="_blank" rel="noopener" class="plink">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </article>
+      <!-- PROJECT 2 -->
+      <article class="pcard" data-open="false" id="pc2">
+        <button class="ptrigger" id="t2" aria-expanded="false" aria-controls="cs2">
+          <div>
+            <div class="pmeta"><span class="pnum">02</span><span class="ptlbl">NLP · Deep Learning</span></div>
+            <div class="ptitle">Resume Classification System</div>
+            <p class="psum">PyTorch BiLSTM with attention mechanism predicting top-3 job roles from resume text with confidence scoring — directly applicable to recruitment automation pipelines.</p>
+            <div class="pmets">
+              <div class="met"><span class="mv">86%</span><span class="ml">Accuracy</span></div>
+              <div class="met"><span class="mv">+4pts</span><span class="ml">vs XGBoost baseline</span></div>
+              <div class="met"><span class="mv">Top-3</span><span class="ml">Predictions + Confidence</span></div>
+            </div>
+          </div>
+          <svg class="chev" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="cs" id="cs2" role="region" aria-labelledby="t2">
+          <div class="csgrid">
+            <div class="csb"><div class="cslbl">The Problem</div><p class="cstxt">Recruiters spend 6–7 seconds scanning a resume. Automating job role classification at scale reduces manual screening by orders of magnitude — enabling faster, more consistent shortlisting for high-volume pipelines.</p></div>
+            <div class="csb"><div class="cslbl">My Approach</div><p class="cstxt">Started with XGBoost as a measurable baseline, then built a PyTorch BiLSTM with custom attention. The attention layer highlights tokens that most influence role prediction — making the model interpretable, not just accurate.</p></div>
+            <div class="csb"><div class="cslbl">Before vs After</div><p class="cstxt"><strong>XGBoost baseline:</strong> 82% accuracy, no sequence modelling, no interpretability. <strong>BiLSTM + Attention:</strong> 86% accuracy, captures word-order context, attention weights provide explainability. Trade-off: higher inference compute, meaningfully better on long-form text.</p></div>
+            <div class="csb"><div class="cslbl">Impact &amp; Scale</div><p class="cstxt"><strong>86% accuracy</strong> on 25+ job categories. Automates screening of 100+ resumes per cycle — reduces recruiter time from 6–7 seconds to &lt;1 second per candidate with <strong>confidence-ranked predictions</strong>. At enterprise scale: 1000 resumes/week = 99+ hours saved monthly. Outperforms XGBoost baseline by 4 percentage points — a meaningfully better triage tool.</p></div>
+            <div class="csb full"><div class="cslbl">Tech Stack</div><div class="cschips"><span class="cschip">Python</span><span class="cschip">PyTorch</span><span class="cschip">BiLSTM</span><span class="cschip">Attention Mechanism</span><span class="cschip">TF-IDF</span><span class="cschip">XGBoost</span><span class="cschip">Scikit-learn</span><span class="cschip">Resume-Atlas</span><span class="cschip">NumPy</span><span class="cschip">Pandas</span></div></div>
+          </div>
+        </div>
+        <div class="plrow" id="pl2" hidden>
+          <a href="https://github.com/sapkotakiran/Resume-Classification" target="_blank" rel="noopener" class="plink">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" aria-labelledby="process-h">
+  <div class="wrap">
+    <div class="shdr rev">
+      <div class="stag">How I Think</div>
+      <h2 class="sh2" id="process-h">From Data to Decision</h2>
+      <p class="ssub">Every system I build follows this deliberate workflow — not a checklist, but a thinking framework.</p>
+    </div>
+    <div class="pwrap" role="list">
+      <div class="pstep rev" role="listitem"><div class="pnum" aria-hidden="true">01</div><div class="ptit">Understand the Problem</div><p class="pdesc">Define success metrics before touching data. What decision will this model enable? What does failure cost?</p></div>
+      <div class="pstep rev" data-d="1" role="listitem"><div class="pnum" aria-hidden="true">02</div><div class="ptit">Data &amp; EDA</div><p class="pdesc">Explore distributions, identify imbalances, find signal. Bad data decisions here ruin every step after.</p></div>
+      <div class="pstep rev" data-d="2" role="listitem"><div class="pnum" aria-hidden="true">03</div><div class="ptit">Baseline First</div><p class="pdesc">Ship a simple model fast. Establishes a benchmark all complex models must beat.</p></div>
+      <div class="pstep rev" data-d="3" role="listitem"><div class="pnum" aria-hidden="true">04</div><div class="ptit">Iterate &amp; Evaluate</div><p class="pdesc">Beyond accuracy: precision, recall, F1, ROC-AUC. Choose the metric that matches the cost of error in context.</p></div>
+      <div class="pstep rev" data-d="4" role="listitem"><div class="pnum" aria-hidden="true">05</div><div class="ptit">Decision &amp; Handoff</div><p class="pdesc">Document trade-offs. Package for use. A model no one can run or explain is not a finished system.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" aria-labelledby="exp-h">
+  <div class="wrap">
+    <div class="shdr rev">
+      <div class="stag">Background</div>
+      <h2 class="sh2" id="exp-h">Experience &amp; Education</h2>
+    </div>
+    <div class="egrid">
+      <div class="ecol rev">
+        <h3>Experience</h3>
+        <div class="tli"><div class="tdate">Jul 2025 – Sep 2025</div><div class="ttit">Junior ML Engineer (Collaborator)</div><div class="torg">Omdena – Global AI Innovation Challenge</div><p class="tdesc">8-week international AI project. Delivered end-to-end data pipelines, contributed to model development and evaluation in agile sprints with engineers across time zones.</p><div class="tbadge">🏅 Junior ML Engineer Badge</div></div>
+        <div class="tli"><div class="tdate">Nov 2025</div><div class="ttit">Foundational Data Science Course</div><div class="torg">Omdena Academy — Certificate</div><p class="tdesc">Python, EDA, ML fundamentals, data visualisation, and a capstone web application deploying a trained ML model.</p></div>
+      </div>
+      <div class="ecol rev" data-d="1">
+        <h3>Education</h3>
+        <div class="tli"><div class="tdate">2022 – 2025</div><div class="ttit">BSc (Hons) Computer Systems Engineering</div><div class="torg">University of Sunderland, UK</div><p class="tdesc">Machine Learning, Data Structures &amp; Algorithms, Computer Networks, Database Systems, Software Engineering, Operating Systems.</p></div>
+        <div class="tli"><div class="tdate">2019 – 2021</div><div class="ttit">Higher Secondary Education (Science)</div><div class="torg">New Oasis Academy</div><p class="tdesc">Science stream — quantitative foundation in mathematics and physics.</p></div>
+        <div class="tli"><div class="tdate">2018</div><div class="ttit">Secondary Education Examination</div><div class="torg">Corona Academy</div><p class="tdesc">Completed SEE with strong academic standing.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <div class="shdr rev">
+      <div class="stag">Let's Talk</div>
+      <h2 class="sh2" id="contact-h">Open to Opportunities</h2>
+    </div>
+    <div class="ccard rev">
+      <h2>Ready to build something together?</h2>
+      <p>I'm actively seeking entry-level ML Engineer or Data Scientist roles — remote or international. If you're building something interesting with data, I'd love to hear about it.</p>
+      <a href="mailto:sapkotakiran66@gmail.com" class="cemail">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true"><path d="M2.5 4h12a1.5 1.5 0 011.5 1.5v7A1.5 1.5 0 0114.5 14h-12A1.5 1.5 0 011 12.5v-7A1.5 1.5 0 012.5 4z" stroke="currentColor" stroke-width="1.3"/><path d="M1 5.5l7.5 5 7.5-5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        sapkotakiran66@gmail.com
+      </a>
+      <div class="srow">
+        <a href="https://www.linkedin.com/in/sapkota-kiran" target="_blank" rel="noopener" class="slink">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/sapkotakiran" target="_blank" rel="noopener" class="slink">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+        <a href="Kiran_Sapkota_CV%20.pdf" download class="slink">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M7.5 2v7M4.5 6.5l3 3 3-3M2.5 12h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><p>Designed &amp; built by Kiran Sapkota &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; Open to global remote opportunities</p></div></footer>
+
+<script>
+/* ── NAV scroll ── */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('sc', window.scrollY > 20), {passive:true});
+
+/* ── Mobile hamburger — fully accessible ── */
+const hbg    = document.getElementById('hbg');
+const drawer = document.getElementById('drawer');
+
+hbg.addEventListener('click', () => {
+  const open = hbg.getAttribute('aria-expanded') === 'true';
+  hbg.setAttribute('aria-expanded', String(!open));
+  drawer.classList.toggle('open', !open);
+});
+drawer.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hbg.setAttribute('aria-expanded', 'false');
+    drawer.classList.remove('open');
+  });
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && drawer.classList.contains('open')) {
+    hbg.setAttribute('aria-expanded', 'false');
+    drawer.classList.remove('open');
+    hbg.focus();
+  }
+});
+
+/* ── Typewriter ── */
+const phrases = [
+  'raw text into intelligent decisions.',
+  'unstructured data into real insights.',
+  'NLP pipelines into production systems.'
+];
+const el = document.getElementById('typed-text');
+let pi = 0, ci = 0, del = false, wait = 0;
+function tick() {
+  if (wait-- > 0) { setTimeout(tick, 60); return; }
+  const p = phrases[pi];
+  if (!del) {
+    el.textContent = p.slice(0, ++ci);
+    if (ci === p.length) { del = true; wait = 38; }
+    setTimeout(tick, 55);
+  } else {
+    el.textContent = p.slice(0, --ci);
+    if (ci === 0) { del = false; pi = (pi + 1) % phrases.length; wait = 8; }
+    setTimeout(tick, 30);
+  }
+}
+setTimeout(tick, 900);
+
+/* ── Scroll reveal ── */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+
+/* ── Project expand — uses scrollHeight so content never clips
+        — addEventListener (no inline handlers)
+        — full keyboard support (Enter / Space)
+        — aria-expanded state updated correctly ── */
+function initProject(cardId, triggerId, caseId, linksId) {
+  const card  = document.getElementById(cardId);
+  const trig  = document.getElementById(triggerId);
+  const cs    = document.getElementById(caseId);
+  const links = document.getElementById(linksId);
+
+  function closeAll() {
+    document.querySelectorAll('.pcard').forEach(c => {
+      c.setAttribute('data-open', 'false');
+      c.querySelector('.ptrigger').setAttribute('aria-expanded', 'false');
+      c.querySelector('.cs').style.height = '0';
+      c.querySelector('.plrow').hidden = true;
+    });
+  }
+
+  function open() {
+    closeAll();
+    card.setAttribute('data-open', 'true');
+    trig.setAttribute('aria-expanded', 'true');
+    cs.style.height = cs.scrollHeight + 'px';
+    links.hidden = false;
+    card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function close() {
+    card.setAttribute('data-open', 'false');
+    trig.setAttribute('aria-expanded', 'false');
+    cs.style.height = '0';
+    links.hidden = true;
+  }
+
+  trig.addEventListener('click', () => {
+    card.getAttribute('data-open') === 'true' ? close() : open();
+  });
+
+  trig.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      card.getAttribute('data-open') === 'true' ? close() : open();
+    }
+  });
+}
+
+initProject('pc1', 't1', 'cs1', 'pl1');
+initProject('pc2', 't2', 'cs2', 'pl2');
+</script>
+</body>
+</html>
