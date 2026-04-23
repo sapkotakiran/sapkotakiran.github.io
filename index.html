@@ -8,14 +8,14 @@
 <meta property="og:title" content="Kiran Sapkota — ML Engineer"/>
 <meta property="og:description" content="I build ML systems that turn raw text into intelligent decisions."/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://kiransapkota.vercel.app"/>
-<meta property="og:image" content="https://kiransapkota.vercel.app/preview.png"/>
+<meta property="og:url" content="https://kiran-sapkota.com.np"/>
+<meta property="og:image" content="https://kiran-sapkota.com.np/preview.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Kiran Sapkota — ML Engineer"/>
 <meta name="twitter:description" content="I build ML systems that turn raw text into intelligent decisions."/>
-<meta name="twitter:image" content="https://kiransapkota.vercel.app/preview.png"/>
+<meta name="twitter:image" content="https://kiran-sapkota.com.np/preview.png"/>
 <meta name="theme-color" content="#0A1628"/>
-<link rel="canonical" href="https://kiransapkota.vercel.app"/>
+<link rel="canonical" href="https://kiran-sapkota.com.np"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -23,7 +23,7 @@
   "name": "Kiran Sapkota",
   "jobTitle": "Machine Learning Engineer",
   "description": "ML Engineer specialising in NLP systems. Builder of end-to-end ML pipelines.",
-  "url": "https://kiransapkota.vercel.app",
+  "url": "https://kiran-sapkota.com.np",
   "sameAs": [
     "https://github.com/sapkotakiran",
     "https://www.linkedin.com/in/sapkota-kiran"
@@ -42,7 +42,7 @@
   "@type": "CollectionPage",
   "name": "Kiran Sapkota — ML Engineer Portfolio",
   "description": "Portfolio of ML projects focusing on NLP systems and end-to-end classification pipelines",
-  "url": "https://kiransapkota.vercel.app",
+  "url": "https://kiran-sapkota.com.np",
   "mainEntity": [
     {
       "@type": "SoftwareSourceCode",
@@ -134,7 +134,10 @@ section{position:relative;z-index:1}
 .eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--acc);animation:bl 2s infinite}
 @keyframes bl{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
 .h1{font-family:var(--fd);font-weight:800;font-size:clamp(2.2rem,4.5vw,3.4rem);line-height:1.1;color:var(--t1);letter-spacing:-.03em;margin-bottom:22px;animation:fu .7s .1s ease both}
-.typed-wrap{color:var(--acc)}
+.typed-wrap{color:var(--acc);position:relative;display:inline-block;max-width:100%}
+.typed-sizer{display:block;visibility:hidden;white-space:normal;max-width:100%}
+.typed-live{position:absolute;inset:0;display:inline-flex;align-items:flex-start;max-width:100%;width:100%}
+#typed-text{display:inline-block;max-width:100%;white-space:normal}
 .cursor{display:inline-block;width:3px;height:.85em;background:var(--acc);border-radius:2px;margin-left:2px;vertical-align:middle;animation:cb 1s steps(1) infinite}
 @keyframes cb{0%,100%{opacity:1}50%{opacity:0}}
 .hsub{font-size:1rem;color:var(--t3);line-height:1.75;max-width:460px;margin-bottom:38px;font-weight:300;animation:fu .7s .2s ease both}
@@ -341,7 +344,8 @@ footer{border-top:1px solid var(--border);padding:26px 0;text-align:center;color
         <h1 class="h1">
           I build ML systems that turn<br>
           <span class="typed-wrap" id="typed-target" aria-live="polite" aria-atomic="true" aria-label="raw text into intelligent decisions">
-            <span id="typed-text"></span><span class="cursor" aria-hidden="true"></span>
+            <span class="typed-sizer" aria-hidden="true">NLP pipelines into production systems.</span>
+            <span class="typed-live"><span id="typed-text"></span><span class="cursor" aria-hidden="true"></span></span>
           </span>
         </h1>
         <p class="hsub">Machine Learning Engineer specialising in end-to-end NLP pipelines. BSc Computer Systems Engineering. Open to global remote opportunities.</p>
@@ -620,6 +624,7 @@ const phrases = [
 ];
 const el = document.getElementById('typed-text');
 let pi = 0, ci = 0, del = false, wait = 0;
+
 function tick() {
   if (wait-- > 0) { setTimeout(tick, 60); return; }
   const p = phrases[pi];
@@ -629,7 +634,12 @@ function tick() {
     setTimeout(tick, 55);
   } else {
     el.textContent = p.slice(0, --ci);
-    if (ci === 0) { del = false; pi = (pi + 1) % phrases.length; wait = 8; }
+    if (ci <= 1) {
+      pi = (pi + 1) % phrases.length;
+      ci = 0;
+      del = false;
+      wait = 0;
+    }
     setTimeout(tick, 30);
   }
 }
